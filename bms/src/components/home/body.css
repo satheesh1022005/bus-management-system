@@ -1,0 +1,29 @@
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  max-height: 800px;
+}
+.card {
+  background-color: #fff;
+  width: 350px;
+  height: 380px;
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+.card-img img {
+  padding: 10px;
+}
+.card h2,
+.card p {
+  padding-left: 20px;
+}
+.card h2 {
+  font-weight: bolder;
+}
+.card p {
+  color: #312f2f;
+}
+.link-design-no {
+  text-decoration: none;
+}

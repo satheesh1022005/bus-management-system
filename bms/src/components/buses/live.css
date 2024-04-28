@@ -1,0 +1,85 @@
+/* Container styling */
+.buses-container {
+  width: 98%; /* Adjusted to 80% */
+  margin: 0 auto;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+}
+.slides {
+  display: flex;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+}
+
+/* Styling for slide data */
+.slide-data {
+  flex-grow: 1;
+}
+
+/* Styling for each paragraph inside slide-data */
+.slide-data p {
+  margin: 5px 0; /* Decreased margin between paragraphs */
+  font-size: 16px; /* Adjusted font size */
+  color: #000000; /* Darker text color */
+  font-weight: bold;
+}
+
+/* Styling for the button */
+.slide-btn button {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Increased padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.slide-btn button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+/************************************/
+.timeline {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #d91818;
+}
+
+.stop {
+  position: relative;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #00334c;
+  border: 2px solid #fff; /* To hide the line inside the circle */
+}
+
+.stop-info {
+  margin-left: 20px;
+}
+
+.stop-info h3 {
+  margin: 0;
+}
+
+.stop-info p {
+  margin: 0;
+}

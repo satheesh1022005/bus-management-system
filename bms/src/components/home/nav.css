@@ -1,0 +1,28 @@
+navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-name {
+  font-size: 38px;
+  margin-left: 20px;
+  background-color: #efef6b;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.logo svg {
+  width: 100px;
+  height: 100px;
+}
+.features ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.features ul li {
+  text-decoration: none;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #e8e8e3;
+}

@@ -1,0 +1,30 @@
+.BusLive-container {
+  display: flex;
+}
+.map-container {
+  padding: 10px;
+}
+.geoLoc-container {
+  padding: 20px;
+}
+.geoLoc-container input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.geoLoc-container button {
+  border: none;
+  background-color: aqua;
+  color: #000;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.geoLoc-container button:hover {
+  color: #fff;
+}
