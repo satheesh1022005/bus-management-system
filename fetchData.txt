@@ -1,0 +1,183 @@
+let requestCnt = 0;
+
+app.get("/track", (req, res) => {
+  // Initialize options for geolocation
+  const options = {
+    enableHighAccuracy: true,
+  };
+
+  // Watch for continuous position updates
+  navigator.geolocation.watchPosition(successCallback, errorCallback, options);
+
+  // Get current position once
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+    timeout: 10_000,
+  });
+
+  function successCallback(position) {
+    const { accuracy, latitude, longitude, altitude, heading, speed } =
+      position.coords;
+
+    // Increment request count for each request
+    requestCnt++;
+
+    // Send response with geolocation data to the client
+    res.json({
+      accuracy,
+      latitude,
+      longitude,
+      altitude,
+      heading,
+      speed,
+      requestCount: requestCnt, // Send incremented request count
+    });
+  }
+
+  function errorCallback(error) {
+    // Handle errors
+    switch (error.code) {
+      case GeolocationPositionError.TIMEOUT:
+        // Handle timeout error
+        console.log("Geolocation request timed out.");
+        break;
+      default:
+        // Handle other errors
+        console.error("Geolocation error:", error);
+    }
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+// import express from "express";
+// import fetch from "node-fetch";
+// import cheerio from "cheerio";
+// import { Sequelize, DataTypes } from "sequelize";
+
+//  //Initialize Express app
+// const app = express();
+
+// // Initialize Sequelize
+// const sequelize = new Sequelize("database", "username", "password", {
+//   dialect: "sqlite",
+//   storage: "database.sqlite",
+// });
+
+// // Define the Track model
+// const Track = sequelize.define("track", {
+//   accuracy: DataTypes.FLOAT,
+//   latitude: DataTypes.FLOAT,
+//   longitude: DataTypes.FLOAT,
+//   altitude: DataTypes.FLOAT,
+//   heading: DataTypes.FLOAT,
+//   speed: DataTypes.FLOAT,
+//   requestCount: DataTypes.INTEGER,
+// });
+
+// // Function to fetch and parse HTML data
+// async function fetchData() {
+//   const url = "YOUR_HTML_URL_HERE";
+//   const response = await fetch(url);
+//   const html = await response.text();
+//   const $ = cheerio.load(html);
+
+//   // Extract data from HTML
+//   const accuracy = parseFloat(
+//     $("#details")
+//       .text()
+//       .match(/Accuracy(\d+(\.\d+)?)/)[1]
+//   );
+//   const latitude = parseFloat(
+//     $("#details")
+//       .text()
+//       .match(/Latitude(-?\d+(\.\d+)?)/)[1]
+//   );
+//   const longitude = parseFloat(
+//     $("#details")
+//       .text()
+//       .match(/Longitude(-?\d+(\.\d+)?)/)[1]
+//   );
+//   const altitude = parseFloat(
+//     $("#details")
+//       .text()
+//       .match(/Altitude(-?\d+(\.\d+)?)/)[1]
+//   );
+//   const heading = parseFloat(
+//     $("#details")
+//       .text()
+//       .match(/Heading(-?\d+(\.\d+)?)/)[1]
+//   );
+//   const speed = parseFloat(
+//     $("#details")
+//       .text()
+//       .match(/Speed(-?\d+(\.\d+)?)/)[1]
+//   );
+//   const requestCount = parseInt(
+//     $("#details")
+//       .text()
+//       .match(/reqcount(\d+)/)[1]
+//   );
+
+//   return {
+//     accuracy,
+//     latitude,
+//     longitude,
+//     altitude,
+//     heading,
+//     speed,
+//     requestCount,
+//   };
+// }
+
+// // Function to update or create track data in the database
+// async function updateTrackData(data) {
+//   await Track.sync();
+//   await Track.create(data);
+// }
+
+// // Function to compare current data with previous and update if changed
+// async function trackChanges() {
+//   const currentData = await fetchData();
+//   const previousData = await Track.findOne({ order: [["createdAt", "DESC"]] });
+
+//   if (
+//     !previousData ||
+//     JSON.stringify(previousData.toJSON()) !== JSON.stringify(currentData)
+//   ) {
+//     await updateTrackData(currentData);
+//     console.log("Data updated in the database.");
+//   } else {
+//     console.log("No changes detected.");
+//   }
+// }
+
+// // Interval to track changes
+// setInterval(trackChanges, 60000); // Track changes every minute
+
+// // API endpoint to get track data
+// app.get("/api/track", async (req, res) => {
+//   try {
+//     const data = await Track.findOne({ order: [["createdAt", "DESC"]] });
+//     res.json(data);
+//   } catch (error) {
+//     res.status(500).json({ error: "Internal server error" });
+//   }
+// });
+
+// // Start the server
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });*/
+
+
+
+

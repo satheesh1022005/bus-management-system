@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MapContainer, TileLayer, Marker,Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-class Map extends Component {
+class MapTwo extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -23,7 +23,10 @@ class Map extends Component {
             <MapContainer center={[11.271316, 77.606153]} zoom={9.2} style={{ height: this.props.height, width: this.props.width }}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 {data.map((point, index) => (
-                    <Marker key={index} position={[point.current_latitude, point.current_longitude]}>
+                    <Marker key={index} position={[
+                        point.current_latitude !== undefined ? point.current_latitude : 11.271316,
+                        point.current_longitude
+                    ]}>
                         <Popup>Bus no:{point.id}</Popup>
                     </Marker>
                 ))}
@@ -32,4 +35,4 @@ class Map extends Component {
     }
 }
 
-export default Map;
+export default MapTwo;

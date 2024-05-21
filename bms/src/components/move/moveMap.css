@@ -1,0 +1,58 @@
+.map-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* High z-index to ensure it's on top */
+}
+
+.find-bus-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; /* Bootstrap primary color for consistency */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 300px;
+  height: 80px;
+}
+.moved {
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #000;
+}
+.find-bus-button:hover {
+  background-color: #0056b3;
+}
+.message {
+  position: absolute;
+  top: 0;
+  right: 0; /* Changed from margin to right */
+  margin: 25px; /* Applies margin to top and right */
+  background-color: #e8e8e8;
+  color: #363535;
+  font-weight: bolder;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+}

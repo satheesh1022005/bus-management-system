@@ -1,0 +1,814 @@
+[
+  {
+  "id": "1",
+  "current_latitude": 11.273140,
+  "current_longitude": 77.608005,
+  "bus_reg_no": "TN56 Q 5972",
+  "destination": "SOLANGAPALAYAM",
+  "driver_name": "C.SETHLTPATHY",
+  "stops": [
+    {
+      "bus_stop": "Uthandipalayam Division",
+      "time": "7.20 AM",
+      "lattitude":11.236142,
+      "longitude":77.833891
+    },
+    {
+      "bus_stop": "Ganapathipalayann Nal Road",
+      "time": "7.23 AM",
+      "lattitude":11.241752,
+      "longitude":77.821831
+    },
+    {
+      "bus_stop": "Ariyangadu",
+      "time": "7.25 AM",
+      "lattitude":11.254102,
+      "longitude":77.803707
+    },
+    {
+      "bus_stop": "Savadipalayam",
+      "time": "7.30 AM",
+      "lattitude":11.268870,
+      "longitude": 77.789268
+
+
+    },
+    
+    {
+      "bus_stop": "Nanjailakkapuram",
+      "time": "7.32 AM",
+      "lattitude":11.299620,
+      "longitude": 77.773955 
+    },
+    {
+      "bus_stop": "Kasipalayam",
+      "time": "7.33 AM",
+      "lattitude":11.308374,
+      "longitude": 77.766910
+
+    },
+    {
+      "bus_stop": "Modakurichi",
+      "time": "7.36 AM",
+      "lattitude":11.298433,
+      "longitude":77.757128
+    },
+    {
+      "bus_stop": "Erode",
+      "time": "7.39 AM",
+      "lattitude":11.294609,
+      "longitude":77.716659
+    },
+    {
+      "bus_stop": "Gift shop",
+      "time": "7.41 AM",
+      "lattitude":11.299329,
+      "longitude":77.698929
+
+
+    },
+    {
+      "bus_stop": "Transport city",
+      "time": "7.43 AM",
+      "lattitude":11.309600, 
+      "longitude":77.662850
+    },
+    {
+      "bus_stop": "Municipality Nagar (East)",
+      "time": "7.44 AM",
+      "lattitude":11.300063,
+      "longitude":77.652956
+    },
+    {
+      "bus_stop": "Solar",
+      "time": "7.45 AM",
+      "lattitude":11.299076,
+      "longitude":77.632666
+    },
+    {
+      "bus_stop": "Ashram School",
+      "time": "7.49 AM",
+      "lattitude":11.297937,
+      "longitude":77.631562
+
+
+    },
+    {
+      "bus_stop": "Kollampalayam Bypass",
+      "time": "7.50 AM",
+      "lattitude":11.285243,
+      "longitude":77.614733
+    },
+    {
+      "bus_stop": "Kongu College of Engineering",
+      "time": "8.20 AM",
+      "lattitude":11.281223,
+      "longitude":77.613007
+
+
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:36:26.825Z"
+  }
+},
+{
+  "id": 2,
+  "current_latitude": 12.9625,
+  "current_longitude": 75.5612,
+  "bus_reg_no": "TN56 R 2954",
+  "destination": "THIRUCHENGODE",
+  "driver_name": "S_GORINATH",
+  "stops": [
+    {
+      "bus_stop": "Thirucherigode Bus Stand",
+      "time": "7.10 AM",
+      "latitude": 12.9610,
+      "longitude": 75.5620
+    },
+    {
+      "bus_stop": "Tiruchengode Old Bus Stand",
+      "time": "7.11 AM",
+      "latitude": 12.9605,
+      "longitude": 75.5625
+    },
+    {
+      "bus_stop": "Marketplace",
+      "time": "7.12 AM",
+      "latitude": 12.9600,
+      "longitude": 75.5630
+    },
+    {
+      "bus_stop": "Rajagoundan Palayam",
+      "time": "7.13 AM",
+      "latitude": 12.9595,
+      "longitude": 75.5635
+    },
+    {
+      "bus_stop": "LI_LILJOTEVil (Water Tank)",
+      "time": "7.14 AM",
+      "latitude": 12.9590,
+      "longitude": 75.5640
+    },
+    {
+      "bus_stop": "Boarding school",
+      "time": "7.14 AM",
+      "latitude": 12.9585,
+      "longitude": 75.5645
+    },
+    {
+      "bus_stop": "Vidyavikas",
+      "time": "7.15 AM",
+      "latitude": 12.9580,
+      "longitude": 75.5650
+    },
+    {
+      "bus_stop": "Kongu College of Engineering",
+      "time": "8.20 AM",
+      "latitude": 12.9575,
+      "longitude": 75.5655
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:37:41.178Z"
+  }
+},
+{
+  "id": "3",
+  "current_latitude": 10.52682,
+  "current_longitude": 79.6255,
+  "bus_reg_no": "TN56 D 5343",
+  "destination": "THOKAVADI",
+  "driver_name": "M.SENTHILKUMAR",
+  "stops": [
+    {
+      "bus_stop": "Thokkavadl",
+      "time": "7.20 AM",
+      "latitude": 10.5260,
+      "longitude": 79.6260
+    },
+    {
+      "bus_stop": "Vannipplayem",
+      "time": "7.25 AM",
+      "latitude": 10.5255,
+      "longitude": 79.6265
+    },
+    {
+      "bus_stop": "KSR College",
+      "time": "7.28 AM",
+      "latitude": 10.5250,
+      "longitude": 79.6270
+    },
+    {
+      "bus_stop": "FIVE MISSION PETROL BUNK",
+      "time": "7.32 AM",
+      "latitude": 10.5245,
+      "longitude": 79.6275
+    },
+    {
+      "bus_stop": "Anangana A (SI313 COLONY)",
+      "time": "7.34 AM",
+      "latitude": 10.5240,
+      "longitude": 79.6280
+    },
+    {
+      "bus_stop": "SPB Colony",
+      "time": "7.35 AM",
+      "latitude": 10.5235,
+      "longitude": 79.6285
+    },
+    {
+      "bus_stop": "Kongu College of Engineering",
+      "time": "8.10 AM",
+      "latitude": 10.5230,
+      "longitude": 79.6290
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:35:37.711Z"
+  }
+},
+{
+  "id": "4",
+  "current_latitude": 13.9625,
+  "current_longitude": 77.606135,
+  "bus_reg_no": "174,133 AB 3339",
+  "destination": "ERODE",
+  "driver_name": "P UNDARAM",
+  "stops": [
+    {
+      "bus_stop": "CNC College",
+      "time": "7.40 AM",
+      "latitude": 13.9620,
+      "longitude": 77.6066
+    },
+    {
+      "bus_stop": "Veerappan Chaararn",
+      "time": "7.42 AM",
+      "latitude": 13.9615,
+      "longitude": 77.6071
+    },
+    {
+      "bus_stop": "Bherti Theatre",
+      "time": "7.44 AM",
+      "latitude": 13.9610,
+      "longitude": 77.6076
+    },
+    {
+      "bus_stop": "Kongu College of Engineering",
+      "time": "8.11 AM",
+      "latitude": 13.9605,
+      "longitude": 77.6081
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:38:00.455Z"
+  }
+},
+{
+  "id": "5",
+  "current_latitude": 18.5515,
+  "current_longitude": 77.5612,
+  "bus_reg_no": "TN56135-59",
+  "destination": "PAPPAMPALAYAM",
+  "driver_name": "E.MUTHLTRUMAR",
+  "stops": [
+    {
+      "bus_stop": "Pappampalayam",
+      "time": "7.10 AM",
+      "latitude": 18.5515,
+      "longitude": 77.5612
+    },
+    {
+      "bus_stop": "Vauakadu",
+      "time": "7.22 AM",
+      "latitude": 18.5531,
+      "longitude": 77.5623
+    },
+    {
+      "bus_stop": "ruining ccricioi",
+      "time": "7.26 AM",
+      "latitude": 18.5567,
+      "longitude": 77.5634
+    },
+    {
+      "bus_stop": "SPR QUARTERS",
+      "time": "7.24 AM",
+      "latitude": 18.5593,
+      "longitude": 77.5645
+    },
+    {
+      "bus_stop": "Ayakat6or",
+      "time": "7.33 AM",
+      "latitude": 18.5609,
+      "longitude": 77.5656
+    },
+    {
+      "bus_stop": "Inpusgog",
+      "time": "7.34 AM",
+      "latitude": 18.5635,
+      "longitude": 77.5667
+    },
+    {
+      "bus_stop": "Ll poirr Col ci orio",
+      "time": "7.35 AM",
+      "latitude": 18.5661,
+      "longitude": 77.5678
+    },
+    {
+      "bus_stop": "veth ciiiiieuv. rig NCEJ",
+      "time": "7.40 AM",
+      "latitude": 18.5687,
+      "longitude": 77.5689
+    },
+    {
+      "bus_stop": "Alampalayarn",
+      "time": "7.41 AM",
+      "latitude": 18.5713,
+      "longitude": 77.57
+    },
+    {
+      "bus_stop": "Alarnala",
+      "time": "7.41 AM",
+      "latitude": 18.5739,
+      "longitude": 77.5711
+    },
+    {
+      "bus_stop": "Sivagiri",
+      "time": "7.42 AM",
+      "latitude": 18.5765,
+      "longitude": 77.5722
+    },
+    {
+      "bus_stop": "Andakkor",
+      "time": "7.43 AM",
+      "latitude": 18.5791,
+      "longitude": 77.5733
+    },
+    {
+      "bus_stop": "Veykodun",
+      "time": "7.44 AM",
+      "latitude": 18.5817,
+      "longitude": 77.5744
+    },
+    {
+      "bus_stop": "Amoor",
+      "time": "7.45 AM",
+      "latitude": 18.5843,
+      "longitude": 77.5755
+    },
+    {
+      "bus_stop": "Elampili",
+      "time": "7.46 AM",
+      "latitude": 18.5869,
+      "longitude": 77.5766
+    },
+    {
+      "bus_stop": "Pitli",
+      "time": "7.46 AM",
+      "latitude": 18.5895,
+      "longitude": 77.5777
+    },
+    {
+      "bus_stop": "Ampolodu",
+      "time": "7.46 AM",
+      "latitude": 18.5921,
+      "longitude": 77.5788
+    },
+    {
+      "bus_stop": "Kadayapatti",
+      "time": "7.46 AM",
+      "latitude": 18.5947,
+      "longitude": 77.5799
+    },
+    {
+      "bus_stop": "Amar",
+      "time": "7.46 AM",
+      "latitude": 18.5973,
+      "longitude": 77.581
+    },
+    {
+      "bus_stop": "Iruvall",
+      "time": "7.46 AM",
+      "latitude": 18.5999,
+      "longitude": 77.5821
+    },
+    {
+      "bus_stop": "Kalkanu",
+      "time": "7.46 AM",
+      "latitude": 18.6025,
+      "longitude": 77.5832
+    },
+    {
+      "bus_stop": "Irukuppal",
+      "time": "7.46 AM",
+      "latitude": 18.6051,
+      "longitude": 77.5843
+    },
+    {
+      "bus_stop": "Irukuppu",
+      "time": "7.46 AM",
+      "latitude": 18.6077,
+      "longitude": 77.5854
+    },
+    {
+      "bus_stop": "Ea",
+      "time": "7.46 AM",
+      "latitude": 18.6103,
+      "longitude": 77.5865
+    },
+    {
+      "bus_stop": "Kalkal",
+      "time": "7.46 AM",
+      "latitude": 18.6129,
+      "longitude": 77.5876
+    },
+    {
+      "bus_stop": "Irukattu",
+      "time": "7.46 AM",
+      "latitude": 18.6155,
+      "longitude": 77.5887
+    },
+    {
+      "bus_stop": "Mylang",
+      "time": "7.46 AM",
+      "latitude": 18.6181,
+      "longitude": 77.5898
+    },
+    {
+      "bus_stop": "Iruvannur",
+      "time": "7.46 AM",
+      "latitude": 18.6207,
+      "longitude": 77.5909
+    },
+    {
+      "bus_stop": "Irutti",
+      "time": "7.46 AM",
+      "latitude": 18.6233,
+      "longitude": 77.592
+    },
+    {
+      "bus_stop": "Kallur",
+      "time": "7.46 AM",
+      "latitude": 18.6259,
+      "longitude": 77.5931
+    },
+    {
+      "bus_stop": "Kallikor",
+      "time": "7.46 AM",
+      "latitude": 18.6285,
+      "longitude": 77.5942
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:36:36.418Z"
+  }
+},
+{
+  "id": 6,
+  "current_latitude": 11.38135,
+  "current_longitude": 77.6061,
+  "bus_reg_no": "TN56 Q 5972",
+  "destination": "PENNIYALAM",
+  "driver_name": "D.THANCIALI",
+  "stops": [
+    {
+      "bus_stop": "Perumal H.",
+      "time": "7.30 AM",
+      "latitude": 11.3820,
+      "longitude": 77.6080
+    },
+    {
+      "bus_stop": "RN Pudur",
+      "time": "7.33 AM",
+      "latitude": 11.3815,
+      "longitude": 77.6075
+    },
+    {
+      "bus_stop": "lonarerali Nagar",
+      "time": "7.35 AM",
+      "latitude": 11.3810,
+      "longitude": 77.6070
+    },
+    {
+      "bus_stop": "RelokatIur",
+      "time": "7.37 AM",
+      "latitude": 11.3805,
+      "longitude": 77.6065
+    },
+    {
+      "bus_stop": "Llmesiont Stream",
+      "time": "7.40 AM",
+      "latitude": 11.3800,
+      "longitude": 77.6060
+    },
+    {
+      "bus_stop": "Saliattlirod division",
+      "time": "7.43 AM",
+      "latitude": 11.3795,
+      "longitude": 77.6055
+    },
+    {
+      "bus_stop": "Acraharam",
+      "time": "7.45 AM",
+      "latitude": 11.3790,
+      "longitude": 77.6050
+    },
+    {
+      "bus_stop": "Swasti School / Lakshrra Theatre",
+      "time": "7.46 AM",
+      "latitude": 11.3785,
+      "longitude": 77.6045
+    },
+    {
+      "bus_stop": "Efi)de WS. 4-1-AND",
+      "time": "7.53 AM",
+      "latitude": 11.3780,
+      "longitude": 77.6040
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-28T17:27:08.958Z"
+  }
+},
+{
+  "id": "7",
+  "current_latitude": 20.5586,
+  "current_longitude": 77.5612,
+  "bus_reg_no": "TN47 K 3119",
+  "destination": "ERODE",
+  "driver_name": "S.PERUMAL",
+  "stops": [
+    {
+      "bus_stop": "Muthamoolayam Colony-1",
+      "time": "7.35 AM",
+      "latitude": 20.5590,
+      "longitude": 77.5620
+    },
+    {
+      "bus_stop": "Muinampoaayam Colony -2",
+      "time": "7.38 AM",
+      "latitude": 20.5595,
+      "longitude": 77.5625
+    },
+    {
+      "bus_stop": "MUlharnpalayam Colony -3",
+      "time": "7.42 AM",
+      "latitude": 20.5600,
+      "longitude": 77.5630
+    },
+    {
+      "bus_stop": "Surampattl Road",
+      "time": "7.45 AM",
+      "latitude": 20.5605,
+      "longitude": 77.5635
+    },
+    {
+      "bus_stop": "EBOIrrce Erode",
+      "time": "7.51 AM",
+      "latitude": 20.5610,
+      "longitude": 77.5640
+    },
+    {
+      "bus_stop": "Kurnalankurum",
+      "time": "7.55 AM",
+      "latitude": 20.5615,
+      "longitude": 77.5645
+    },
+    {
+      "bus_stop": "Old camp",
+      "time": "7.56 AM",
+      "latitude": 20.5620,
+      "longitude": 77.5650
+    },
+    {
+      "bus_stop": "Amman Ntwor",
+      "time": "7.58 AM",
+      "latitude": 20.5625,
+      "longitude": 77.5655
+    },
+    {
+      "bus_stop": "Vannangkatu 'YaLasu",
+      "time": "8.00 AM",
+      "latitude": 20.5630,
+      "longitude": 77.5660
+    },
+    {
+      "bus_stop": "Kunfic.i.paril !Newlin",
+      "time": "8.15 AM",
+      "latitude": 20.5635,
+      "longitude": 77.5665
+    },
+    {
+      "bus_stop": "Kongu College of Engineering",
+      "time": "8.20 AM",
+      "latitude": 20.5640,
+      "longitude": 77.5670
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:36:13.771Z"
+  }
+},
+{
+  "id": 8,
+  "current_latitude": 11.27135,
+  "current_longitude": 78.98852,
+  "bus_reg_no": "TN33 AW 9003",
+  "destination": "KONGAMPALAYAM",
+  "driver_name": "M.SANMUGASISNI)ARAM",
+  "stops": [
+    {
+      "bus_stop": "Kankzrripakayam",
+      "time": "7.40 AM",
+      "latitude": 11.2710,
+      "longitude": 78.9890
+    },
+    {
+      "bus_stop": "Marnarallupaiayam",
+      "time": "7.44 AM",
+      "latitude": 11.2705,
+      "longitude": 78.9895
+    },
+    {
+      "bus_stop": "01 Wattr Par•dalpolayam",
+      "time": "7.48 AM",
+      "latitude": 11.2700,
+      "longitude": 78.9900
+    },
+    {
+      "bus_stop": "C—S Nagar",
+      "time": "7.50 AM",
+      "latitude": 11.2695,
+      "longitude": 78.9905
+    },
+    {
+      "bus_stop": "Kam raulharkulom",
+      "time": "7.53 AM",
+      "latitude": 11.2690,
+      "longitude": 78.9910
+    },
+    {
+      "bus_stop": "Sevrnour",
+      "time": "7.56 AM",
+      "latitude": 11.2685,
+      "longitude": 78.9915
+    },
+    {
+      "bus_stop": "Agricultural town",
+      "time": "7.58 AM",
+      "latitude": 11.2680,
+      "longitude": 78.9920
+    },
+    {
+      "bus_stop": "Ellivalaywn1R.ND•13)",
+      "time": "8.04 AM",
+      "latitude": 11.2675,
+      "longitude": 78.9925
+    },
+    {
+      "bus_stop": "VIlloros3mbolll Marlarnman temple",
+      "time": "8.07 AM",
+      "latitude": 11.2670,
+      "longitude": 78.9930
+    },
+    {
+      "bus_stop": "DIndelmedu",
+      "time": "8.10 AM",
+      "latitude": 11.2665,
+      "longitude": 78.9935
+    },
+    {
+      "bus_stop": "Kongu College of Engineering",
+      "time": "8.20 AM",
+      "latitude": 11.2660,
+      "longitude": 78.9940
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T05:09:17.026Z"
+  }
+},
+{
+  "id": 9,
+  "current_latitude": 12.6625,
+  "current_longitude": 75.5612,
+  "bus_reg_no": "TN56135-59",
+  "destination": "CILLNIGAlid I ,ALAYAM",
+  "driver_name": "PC.BALASURRIAMAN",
+  "stops": [
+    {
+      "bus_stop": "workshop",
+      "time": "7.10 AM",
+      "latitude": 12.6630,
+      "longitude": 75.5617
+    },
+    {
+      "bus_stop": "chin warm Marilyn",
+      "time": "7.11 AM",
+      "latitude": 12.6635,
+      "longitude": 75.5622
+    },
+    {
+      "bus_stop": "Muthukoundanpoloyarn",
+      "time": "7.32 AM",
+      "latitude": 12.6640,
+      "longitude": 75.5627
+    },
+    {
+      "bus_stop": "Lakkapuram",
+      "time": "7.34 AM",
+      "latitude": 12.6645,
+      "longitude": 75.5632
+    },
+    {
+      "bus_stop": "Rucluoi:Fasu",
+      "time": "7.35 AM",
+      "latitude": 12.6650,
+      "longitude": 75.5637
+    },
+    {
+      "bus_stop": "Banermedu.Municipality (West)",
+      "time": "7.37 AM",
+      "latitude": 12.6655,
+      "longitude": 75.5642
+    },
+    {
+      "bus_stop": "vallikkwastiour coon.",
+      "time": "7.39 AM",
+      "latitude": 12.6660,
+      "longitude": 75.5647
+    },
+    {
+      "bus_stop": "Moloko-orionpnlayorn",
+      "time": "7.40 AM",
+      "latitude": 12.6665,
+      "longitude": 75.5652
+    },
+    {
+      "bus_stop": "Cairn& Sn031",
+      "time": "7.41 AM",
+      "latitude": 12.6670,
+      "longitude": 75.5657
+    },
+    {
+      "bus_stop": "Indironagar",
+      "time": "7.43 AM",
+      "latitude": 12.6675,
+      "longitude": 75.5662
+    },
+    {
+      "bus_stop": "Cherrminrirrar Runk",
+      "time": "7.53 AM",
+      "latitude": 12.6680,
+      "longitude": 75.5667
+    },
+    {
+      "bus_stop": "Paionikoundanpelayam",
+      "time": "7.54 AM",
+      "latitude": 12.6685,
+      "longitude": 75.5672
+    },
+    {
+      "bus_stop": "Athappampalayam Nal Road",
+      "time": "8.01 AM",
+      "latitude": 12.6690,
+      "longitude": 75.5677
+    },
+    {
+      "bus_stop": "magi College of Engineering",
+      "time": "8.03 AM",
+      "latitude": 12.6695,
+      "longitude": 75.5682
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:37:22.846Z"
+  }
+},
+{
+  "id": 10,
+  "current_latitude": 12.6625,
+  "current_longitude": 77.5612,
+  "bus_reg_no": "TN47 K 3119",
+  "destination": "ERODE",
+  "driver_name": "S.PERUMAL",
+  "stops": [
+    {
+      "bus_stop": "Rojanagar",
+      "time": "7.44 AM",
+      "latitude": 12.6615,
+      "longitude": 77.5617
+    },
+    {
+      "bus_stop": "Kongu College of Engineering",
+      "time": "8.20 AM",
+      "latitude": 12.6579,
+      "longitude": 77.5821
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-04-29T09:37:03.393Z"
+  }
+}
+]

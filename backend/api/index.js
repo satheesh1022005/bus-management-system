@@ -188,6 +188,8 @@
 /**************************kick with mongodb************************************/
 
 const http = require("http");
+const bodyParser = require("body-parser");
+const twilio = require("twilio");
 const express = require("express");
 const WebSocket = require("ws");
 // const mysql = require("mysql2");
@@ -196,10 +198,12 @@ const mongoose = require("mongoose");
 const busData = require("./models/bus.model");
 const app = express();
 app.use(cors());
-
 const server = http.createServer(app);
-const wss = new WebSocket.Server({ server, host: "192.168.189.157" });
-
+const wss = new WebSocket.Server({ server, host: "localhost" });
+const accountSid = "AC0ab1016261b84e9f90d9c467fa5b0983"; // Your Twilio Account SID
+const authToken = "7a9b814678fe0e34b7b2a3bcf7bc03d4"; // Your Twilio Auth Token
+app.use(express.urlencoded({ extended: true }));
+const client = new twilio(accountSid, authToken);
 //db
 // const pool = mysql.createPool({
 //   host: "localhost",
@@ -221,7 +225,24 @@ mongoose
   .catch((err) => {
     console.error("MongoDB connection error:", err);
   });
-
+/**Schema* */
+const userSchema = new mongoose.Schema({
+  email: {
+    type: String,
+    required: true,
+    validate: {
+      validator: function (email) {
+        return /@kongu\.edu$/.test(email);
+      },
+      message: "Email must end with @kongu.edu",
+    },
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+});
+const User = mongoose.model("User", userSchema);
 // function queryDatabase(query, callback) {
 //   pool.getConnection(function (err, connection) {
 //     if (err) {
@@ -272,20 +293,74 @@ wss.on("connection", function connection(ws) {
 });
 
 async function updateLive(data) {
-  const { id, current_latitude, current_longitude } = data;
-  console.log(data);
   try {
-    const result = await busData.updateOne(
-      { _id: id },
-      {
-        $set: {
-          current_latitude: current_latitude,
-          current_longitude: current_longitude,
-        },
-      }
-    );
-    fetchDataAndBroadcast();
+    const { id, current_latitude, current_longitude, unique_id } = data;
+    if (!unique_id) {
+      console.log("Unique ID is empty");
+      return;
+    }
+    const _id = unique_id;
+    const updatedData = { current_latitude, current_longitude };
+    const bus = await busData.findByIdAndUpdate(_id, updatedData, {
+      new: true,
+    });
+    if (!bus) {
+      console.log("Bus not found");
+      return;
+    }
+    console.log("bus updated successfully");
   } catch (err) {
     console.error("Error updating data in database:", err);
   }
+  fetchDataAndBroadcast();
 }
+
+app.post("/send-sms", bodyParser.json(), (req, res) => {
+  console.log(req.body);
+  // Uncomment and use the line below if you want to use values from req.body
+  // const { body, to } = req.body;
+
+  client.messages
+    .create({
+      body: "Hello Satheesh! you are very near to the bus", // You can replace "Hello Satheesh!" with `body` if it's from req.body
+      to: "+919894361046", // Make sure this number is verified with Twilio if using a trial account
+      from: "+13343759877", // Your Twilio number
+    })
+    .then((message) => {
+      console.log(message.sid);
+      res.send("Message sent!");
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Failed to send message");
+    });
+});
+
+app.post("/signup", express.json(), async (req, res) => {
+  console.log("Headers:", req.headers);
+  console.log("Body:", req.body);
+
+  const { email, password } = req.body;
+  if (!/@kongu\.edu$/.test(email)) {
+    return res.json({
+      success: false,
+      message: "Only kongu mail addresses are allowed.",
+    });
+  }
+
+  try {
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      res.json({ success: true, message: "Logged in successfully" });
+    } else {
+      const newUser = new User({ email, password });
+      await newUser.save();
+      res.json({ success: true, message: "Logged in successfully" });
+    }
+  } catch (error) {
+    res.json({
+      success: false,
+      message: "An error occurred: " + error.message,
+    });
+  }
+});

@@ -1,0 +1,36 @@
+/* findBus.css */
+
+/* Style for the nearest bus container */
+.find-bus {
+  padding: 10px;
+}
+.nearest-bus {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #535353;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Style for the button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the loading text */
+p.loading {
+  font-style: italic;
+  color: #999;
+}
+.back-color {
+  background-color: rgb(237, 104, 104);
+  color: #fff;
+  font-weight: bold;
+}

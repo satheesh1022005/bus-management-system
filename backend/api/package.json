@@ -11,11 +11,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@react-leaflet/core": "^2.1.0",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "leaflet": "^1.9.4",
+    "leaflet-routing-machine": "^3.2.12",
     "mongodb": "^6.5.0",
     "mongoose": "^8.3.2",
     "mysql2": "^3.9.7",
     "nodemon": "^3.1.0",
+    "react-leaflet-routing-machine": "^0.0.5",
+    "twilio": "^5.0.4",
     "ws": "^8.16.0"
   }
 }

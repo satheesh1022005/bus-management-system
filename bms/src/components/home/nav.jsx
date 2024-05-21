@@ -3,7 +3,7 @@ import './nav.css';
 import { Link } from "react-router-dom";
 function Nav(){
     return(
-        <navbar className="navbar">
+        <nav className="navbar">
             <div className="logo">
                 <h1 className="logo-name">KEC BUSES</h1>
             </div>
@@ -15,7 +15,7 @@ function Nav(){
                     <li>About</li>
                 </ul>
             </div>
-        </navbar>
+        </nav>
     );
 }
 export default Nav;

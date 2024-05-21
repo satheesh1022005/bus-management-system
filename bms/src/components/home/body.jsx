@@ -8,7 +8,7 @@ function Body(){
     return(
         <div className="card-container">
                 <div className="card">
-                    <Link to="/live" className="link-design-no">
+                    <Link to="/movemap" className="link-design-no">
                     <section className="card-img">
                         <img src={live} alt="card1" width="320px" height="270px"></img>
                     </section>
@@ -17,11 +17,13 @@ function Body(){
                     </Link>
                 </div>
                 <div className="card">
+                <Link to="/findbus" className="link-design-no">
                     <section className="card-img">
                         <img src={ticket} alt="card1" width="320px" height="270px"></img>
                     </section>
-                    <h2>Ticket booking</h2>
+                    <h2>Find nearby Bus</h2>
                     <p>Book tickets for KEC trip buses seamlessly through our platform.</p>
+                    </Link>
                 </div>
                 <div className="card">
                     <section className="card-img">

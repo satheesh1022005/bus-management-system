@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const busSchema = mongoose.Schema(
   {
-    id: { type: String, unique: true },
+    id: { type: String, unique: true, index: true },
     current_latitude: Number,
     current_longitude: Number,
     bus_reg_no: String,
@@ -11,6 +11,8 @@ const busSchema = mongoose.Schema(
       {
         bus_stop: String,
         time: String,
+        lattitude: Number,
+        longitude: Number,
       },
     ],
   },
