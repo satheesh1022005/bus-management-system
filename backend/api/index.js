@@ -323,8 +323,8 @@ app.post("/send-sms", bodyParser.json(), (req, res) => {
   client.messages
     .create({
       body: "Hello Satheesh! you are very near to the bus", // You can replace "Hello Satheesh!" with `body` if it's from req.body
-      to: "+919894361046", // Make sure this number is verified with Twilio if using a trial account
-      from: "+13343759877", // Your Twilio number
+      to: "your number", // Make sure this number is verified with Twilio if using a trial account
+      from: "Your Twilio number", // Your Twilio number
     })
     .then((message) => {
       console.log(message.sid);
