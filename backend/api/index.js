@@ -200,8 +200,8 @@ const app = express();
 app.use(cors());
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server, host: "localhost" });
-const accountSid = "AC0ab1016261b84e9f90d9c467fa5b0983"; // Your Twilio Account SID
-const authToken = "7a9b814678fe0e34b7b2a3bcf7bc03d4"; // Your Twilio Auth Token
+const accountSid = "Your Twilio Account SID"; // Your Twilio Account SID
+const authToken = "Your Twilio Auth Token"; // Your Twilio Auth Token
 app.use(express.urlencoded({ extended: true }));
 const client = new twilio(accountSid, authToken);
 //db
