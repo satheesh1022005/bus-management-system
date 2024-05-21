@@ -3,7 +3,7 @@ from flask_cors import CORS
 from crewai import Agent, Task, Process, Crew
 from langchain_google_genai import ChatGoogleGenerativeAI
 import json
-api_key = "AIzaSyA_Mbd2q4jF4npJI36iBS9sHg18qu2d0_s"
+api_key = "your api key"
 app = Flask(__name__)
 CORS(app)
 with open('C:/Users/satheesh k/OneDrive/Desktop/bus/backend/bot/data.txt', 'r') as file:
